@@ -1,8 +1,8 @@
 ---
 import Footer from "../components/footer.astro";
-import Header from "../components/header.astro";
-import Nav from "../components/nav.astro";
 import { ViewTransitions } from "astro:transitions";
+import logo from "../assets/logo.webp";
+import Image from "astro/components/Image.astro";
 
 interface Props {
   title: string;
@@ -28,14 +28,41 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="p-4 bg-blue" transition:animate="fade">
-    <div class="flex flex-col">
-      <Header />
-      <Nav />
+  <body class="p-4 flex flex-col bg-blue" transition:animate="fade">
+    <header class="mb-4">
+      <a href="/"
+        ><Image
+          class="w-24"
+          src={logo}
+          alt="Belt Your Tits Off"
+          loading="eager"
+        /></a
+      >
+    </header>
+    <div class="bg-lightpink px-8 py-4 mb-4 rounded shadow">
       <main>
         <slot />
       </main>
-      <Footer />
     </div>
+    <Footer />
+    <style is:global>
+      @tailwind base;
+
+      @tailwind components;
+
+      @tailwind utilities;
+
+      @tailwind variants;
+
+      @layer base {
+        .prose a {
+          @apply underline;
+        }
+
+        .prose > p {
+          @apply pb-2 text-pretty;
+        }
+      }
+    </style>
   </body>
 </html>

@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<nav class="flex mb-12 justify-center rotate-3">
+  <button
+    class="relative flex gap-2 justify-between self-center items-center font-display text-lg bg-darkpink md:w-[34rem] w-[24rem] px-4 py-4 rounded-lg shadow"
+  >
+    <div class="flex-row flex gap-4">
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+    </div>
+    <div
+      class="bg-white px-2 py-1 rounded-sm flex items-center justify-between gap-2 text-2xl"
+    >
+      Raising funds for El's top surgery
+    </div>
+    <div class="flex-row flex gap-4">
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+      <div class="bg-white h-2 w-2 rounded-full"></div>
+    </div>
+    <!-- Left arrow -->
+    <div
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full"
+    >
+      <Icon name="mdi:arrow-right" class="text-black text-4xl opacity-100" />
+    </div>
+    <!-- Right arrow -->
+    <div
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full"
+    >
+      <Icon name="mdi:arrow-left" class="text-black text-4xl opacity-100" />
+    </div>
+  </button>
+</nav>

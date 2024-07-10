@@ -1,0 +1,67 @@
+[
+    {
+        "index": 0,
+        "name": "El Simons",
+        "slug": "el_simons",
+        "image": "el",
+        "pronouns": "they/them",
+        "bio": "<p>El is a Belgian actor who settled in London after drama school. They have experience in musical theatre, theatre, film, tv and opera as well as production work and are currently part of the National Youth Theatre.</p><p>Training: Mountview, Fontys, De! Kunsthumaniora, RITCS</p><p>Credits in training: Medium Alison in <i>Fun Home</i> (Mountview), Charity in <i>Sweet Charity</i> (Mountview)</p> <p>Theatre: <i>Ada</i> (NYT), <i>La Fête</i> (The Glory)</p> <p>Concert: <i>Dreaming Of MT</i> (Union Theatre)</p><p>Film: <i>Annette</i></p><p>Other: <i>Hold The Hope</i>, <i>Stranger Things: The Experience</i>, <i>De Ideale Wereld</i>, <i>The Odyssey: Part V</i> (workshop at The National)</p>"
+    },
+    {
+        "index": 1,
+        "name": "Annie Loftus",
+        "slug": "annie_loftus",
+        "image": "annie",
+        "pronouns": "they/them"
+    },
+    {
+        "index": 2,
+        "name": "Joy Tan",
+        "slug": "joy_tan",
+        "image": "joy",
+        "pronouns": "they/them",
+        "bio": "Joy Tan trained at the Mountview Academy of Theatre Arts and the Royal Conservatoire of Scotland. They are part of <i>Showstopper! The Improvised Musical</i> who tour and perform across the UK. Work in theatre includes: <i>Jungle Rumble</i> at the Fortune; <i>A-Typical Rainbow</i> at the Turbine; <i>The Crucible</i> at the Olivier and at the Gielgud; <i>George Takei’s Allegiance</i> at the Charing Cross and <i>Pacific Overtures</i> at the Menier Chocolate Factory. Workshops include <i>Witches</i> with Lyndsey Turner, Dave Malloy and Lucy Kirkwood."
+    },
+    {
+        "index": 3,
+        "name": "Freddie Love",
+        "slug": "freddie_love",
+        "image": "freddie",
+        "pronouns": "they/them",
+        "bio": "Freddie Love (they/them) is a multifaceted artist whose talents span the realms of acting, writing, musical theatre, opera, and drag. Originally from Oklahoma USA, Freddie clawed their way off the farm and on to the stage. From the West End to queer basement theatre, Freddie has captivated audiences worldwide. Their credits include: <i>Just For One Day</i> (The Old Vic), <i>But I’m A Cheerleader</i> (Turbine Theatre), <i>Classical Drag</i> (Here at Outernet), <i>Fierce Love</i> (Cockpit Theatre), <i>Gatsby</i> (Southwark Playhouse), <i>Sex, Drag & Opera</i> (King’s Head Theatre), and <i>Queer Cowboys</i> (Wilton’s Music Hall). Their solo show <i>Queer Cowboys</i> will be returning to the King’s Head Theatre later this summer.",
+        "website": "www.freddielove.com",
+        "instagram": "mx.freddielove"
+    },
+    {
+        "index": 4,
+        "name": "Laoi Curtin",
+        "slug": "laoi_curtin",
+        "image": "laoi",
+        "pronouns": "they/them",
+        "bio": "Laoi Curtin (they/them) is an Irish non-binary performer based in London. They acquired their BFA Musical Theatre from American College Dublin in 2022. Credits in training: Molly in <i>One Touch of Venus</i>, Narrator in <i>Into The Woods</i>, Marmee in <i>Little Women (The Broadway Musical)</i>, Candace in <i>Image of an Unknown Young Woman</i>."
+    },
+    {
+        "index": 5,
+        "name": "Rachel Blaquière",
+        "slug": "rachel_blaquiere",
+        "image": "rachel",
+        "pronouns": "she/her"
+    },
+    {
+        "index": 6,
+        "name": "Beth Graham",
+        "slug": "beth_graham",
+        "image": "beth",
+        "pronouns": "she/they",
+        "bio": "<p>Beth is a proudly queer and neurodivergent musical theatre actor, director and performance maker. Recent acting credits include: Audrey in <i><a href=https://www.pleasance.co.uk/event/all-fraudulent-horse-girls>All the Fraudulent Horse Girls</i></a> (The Glory, Seven Dials Playhouse, National Theatre River Stage), Dingus in <i>In The Basement</i>, and Clara in <i>Couple Fight</i> (The Glory). They are currently preparing to spend the summer horsin' around in the fourth revival of <i><a href=https://crowdfund.edfringe.com/p/horse-girls>All the Fraudulent Horse Girls</a></i>, which will play at the Pleasance Dome, Edinburgh Fringe, from 31st July-26th Aug.</p>"
+    },
+    {
+        "index": 7,
+        "name": "Ashley Goh",
+        "slug": "ashley_goh",
+        "image": "ashley",
+        "pronouns": "they/them",
+        "bio": "<p>Training: Savi Arts, New Earth Theatre, ArtsEd, Mountview</p> <p>Theatre: <i>Babies</i> (The Other Palace), <i>Babies</i> (The Lyric Theatre), <i>FURY & ELYSIUM</i> (The Other Palace Studio), <i>The Phase</i> (The Vaults), <i>Red Riding Hood</i> (Theatre Royal Stratford East)</p><p>Concerts: <i>REPRESENTASIAN</i> (Phoenix Arts Theatre), <i>The Chamber Musical Sessions</i> (Garrick Theatre), <i>PRIDE at the Palace</i> (The Palace Theatre)</p><p>Film: <i>Divine Intervention</i> (dir. Ravenna Tran), <i>Aetherium</i> (dir. Livvy Edwards)</p><p>Audio drama: <i>Trice Forgotten</i> (Rusty Quill)</p>",
+        "instagram": "ashleyinshades"
+    }
+]
