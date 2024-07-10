@@ -63,7 +63,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       performerData?.image && (
         <img
           alt={`A headshot of ${performerData?.name}, looking directly at the camera`}
-          src={`/assets/${performerData.image}.webp`}
+          src={`/${performerData.image}.webp`}
           class="rounded w-3/4 border-2 border-blue md:justify-self-end justify-self-center shadow"
         />
       )

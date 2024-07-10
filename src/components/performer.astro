@@ -1,6 +1,4 @@
 ---
-import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
 
 interface Props {
   name: string;
@@ -12,21 +10,14 @@ interface Props {
 }
 
 const { name, image, pronouns, slug, key, loading } = Astro.props;
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
-);
-if (!images[image])
-  throw new Error(
-    `"${image}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
-  );
 ---
 
 <article
   class="flex-1 bg-lightpink border rounded-md font-display flex flex-col items-center md:px-8 px-12 py-4 shadow"
 >
   <div class="flex flex-col items-center justify-center">
-    <Image
-      src={images[image]()}
+    <img
+      src={`${image}.webp`}
       title={name}
       alt={`${name}`}
       loading={loading}

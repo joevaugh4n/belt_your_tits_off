@@ -14,7 +14,7 @@ import data from "../assets/data/data.json";
             loading="eager"
             key={performer.index}
             name={performer.name}
-            image={`/src/assets/${performer.image}.webp`}
+            image={performer.image}
             pronouns={performer.pronouns}
             slug={performer.slug}
           />
@@ -23,7 +23,7 @@ import data from "../assets/data/data.json";
             loading="lazy"
             key={performer.index}
             name={performer.name}
-            image={`/src/assets/${performer.image}.webp`}
+            image={performer.image}
             pronouns={performer.pronouns}
             slug={performer.slug}
           />
