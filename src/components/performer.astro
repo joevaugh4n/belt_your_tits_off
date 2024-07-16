@@ -12,40 +12,42 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
 ---
 
 <article
-  class="bg-lightpink grid h-full shadow rounded-sm font-display"
+  class="bg-lightpink h-full shadow rounded-sm font-display flex flex-col justify-between"
 >
   <!-- Image -->
-  {
-    image ? (
-      <img
-        src={`${image}.webp`}
-        title={name}
-        alt={`${name}`}
-        loading={loading}
-        class="w-full rounded-sm"
-      />
-    ) :
+  {image ? (
+    <img
+      src={`${image}.webp`}
+      title={name}
+      alt={`${name}`}
+      loading={loading}
+      class="w-full rounded-sm"
+    />
+  ) : (
     ""
-  }
+  )}
 
   <!-- Prose -->
-  <section class="p-2 text-black bg-opacity-20 flex items-center flex-col">
-    <h2
-      class="text-2xl px-2 h-fill font-display text-center uppercase tracking-wider leading-8 mb-1"
-    >
-      {name}
-    </h2>
+  <section class="p-2 text-black bg-opacity-20 flex flex-col flex-grow">
+    <!-- Name & pronouns -->
+    <section class="flex-grow">
+      <h2
+        class="text-2xl font-display text-center uppercase tracking-wider leading-8 mb-1"
+      >
+        {name}
+      </h2>
+      <p class="font-display mb-2 text-center">{pronouns && `(${pronouns})`}</p>
+    </section>
 
-    <p class="font-display mb-2">{pronouns && `(${pronouns})`}</p>
-
-    {
-      slug && (
+    <!-- CTA -->
+    {slug && (
+      <div class="flex justify-center mt-4">
         <a href={`/${slug}`}>
           <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
             Bio
           </button>
         </a>
-      )
-    }
+      </div>
+    )}
   </section>
 </article>

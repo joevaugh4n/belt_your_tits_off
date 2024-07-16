@@ -35,7 +35,7 @@ const nextPerformer = data[nextPerformerIndex];
 
 // Import images dynamically
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 ---
 
@@ -44,10 +44,15 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     ? `${performerData.name} (${performerData.pronouns})`
     : "Undefined"}
 >
+  <!-- Role -->
+
   <!-- Name, role and pronouns -->
+
+  <p class="capitalize mb-2">{performerData?.role}</p>
+
   <header class="mb-4 flex justify-between items-start">
-    <section class="font-display">
-      <h2 class="text-4xl mb-1 tracking-wide uppercase">
+    <section>
+      <h2 class="text-4xl mb-1 tracking-wide uppercase font-display">
         {performerData?.name}
       </h2>
       <p>({performerData?.pronouns})</p>
@@ -72,13 +77,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         <img
           alt={`A headshot of ${performerData?.name}, looking directly at the camera`}
           src={`/${performerData.image}.webp`}
-          class="rounded border-2 border-blue md:justify-self-end justify-self-center shadow"
+          class="rounded md:justify-self-end justify-self-center shadow"
         />
       )
     }
 
     <!-- Prose -->
-    <section class="font-sans text-black text-lg leading-7">
+    <section class="font-sans text-black text-lg leading-8 tracking-wider">
       <section
         class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
         set:html={performerData?.bio}
@@ -92,7 +97,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <!-- Nav -->
   <nav class="flex justify-between items-center mt-4 gap-8">
     <button
-      class="shadow px-2 py-1 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
+      class="shadow px-2 py-1 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95"
     >
       <a href={`/${previousPerformer.slug}`} class="flex items-center gap-2">
         <Icon name="mdi:arrow-left" class="text-2xl text-white" />
@@ -100,7 +105,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       </a>
     </button>
     <button
-      class="shadow px-2 py-1 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
+      class="shadow px-2 py-1 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95"
     >
       <a href={`/${nextPerformer.slug}`} class="flex items-center gap-2">
         <span class="font-display text-right">{nextPerformer.name}</span>
