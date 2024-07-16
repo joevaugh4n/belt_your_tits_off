@@ -15,6 +15,7 @@ export function getStaticPaths() {
       name: performer.name,
       bio: performer.bio,
       instagram: performer.instagram,
+      tiktok: performer.tiktok,
       website: performer.website,
     },
   }));
@@ -43,25 +44,25 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     ? `${performerData.name} (${performerData.pronouns})`
     : "Undefined"}
 >
-  <!-- Socials -->
-  <nav class="flex-col gap-2 items-center justify-center absolute right-8">
-    {
-      performerData?.instagram && (
-        <a href={`https://instagram.com/${performerData.instagram}`}>
-          <Icon name="mdi:instagram" class="text-2xl text-black" />
-        </a>
-      )
-    }
-  </nav>
-
   <!-- Name, role and pronouns -->
-  <header class="mb-4">
-    <h2 class="font-display text-4xl mb-1 tracking-wide uppercase text-center">
-      {performerData?.role}: {performerData?.name}
-    </h2>
-    <div class="flex justify-center gap-8 font-sans text-center">
-      <p class="">({performerData?.pronouns})</p>
-    </div>
+  <header class="mb-4 flex justify-between items-start">
+    <section class="font-display">
+      <h2 class="text-4xl mb-1 tracking-wide uppercase text-center">
+        {performerData?.name}
+      </h2>
+      <p>({performerData?.pronouns})</p>
+    </section>
+
+    <!-- Socials -->
+    <section class="flex-row">
+      {
+        performerData?.instagram && (
+          <a href={`https://instagram.com/${performerData.instagram}`}>
+            <Icon name="mdi:instagram" class="text-3xl text-black" />
+          </a>
+        )
+      }
+    </section>
   </header>
 
   <!-- Image -->
@@ -89,20 +90,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   </section>
 
   <!-- Nav -->
-  <nav class="flex justify-between items-center mt-4">
+  <nav class="flex justify-between items-center mt-4 gap-8">
     <button
-      class="shadow p-2 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
+      class="shadow px-2 py-1 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
     >
       <a href={`/${previousPerformer.slug}`} class="flex items-center gap-2">
         <Icon name="mdi:arrow-left" class="text-2xl text-white" />
-        <span class="font-display">{previousPerformer.name}</span>
+        <span class="font-display text-left">{previousPerformer.name}</span>
       </a>
     </button>
     <button
-      class="shadow p-2 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
+      class="shadow px-2 py-1 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
     >
       <a href={`/${nextPerformer.slug}`} class="flex items-center gap-2">
-        <span class="font-display">{nextPerformer.name}</span>
+        <span class="font-display text-right">{nextPerformer.name}</span>
         <Icon name="mdi:arrow-right" class="text-2xl text-white" />
       </a>
     </button>
