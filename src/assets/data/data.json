@@ -1,6 +1,7 @@
 [
     {
         "index": 0,
+        "role": "cast",
         "name": "El Simons",
         "slug": "el_simons",
         "image": "el",
@@ -9,13 +10,7 @@
     },
     {
         "index": 1,
-        "name": "Annie Loftus",
-        "slug": "annie_loftus",
-        "image": "annie",
-        "pronouns": "they/them"
-    },
-    {
-        "index": 2,
+        "role": "cast",
         "name": "Joy Tan",
         "slug": "joy_tan",
         "image": "joy",
@@ -23,7 +18,8 @@
         "bio": "Joy Tan trained at the Mountview Academy of Theatre Arts and the Royal Conservatoire of Scotland. They are part of <i>Showstopper! The Improvised Musical</i> who tour and perform across the UK. Work in theatre includes: <i>Jungle Rumble</i> at the Fortune; <i>A-Typical Rainbow</i> at the Turbine; <i>The Crucible</i> at the Olivier and at the Gielgud; <i>George Takei’s Allegiance</i> at the Charing Cross and <i>Pacific Overtures</i> at the Menier Chocolate Factory. Workshops include <i>Witches</i> with Lyndsey Turner, Dave Malloy and Lucy Kirkwood."
     },
     {
-        "index": 3,
+        "index": 2,
+        "role": "cast",
         "name": "Freddie Love",
         "slug": "freddie_love",
         "image": "freddie",
@@ -33,7 +29,8 @@
         "instagram": "mx.freddielove"
     },
     {
-        "index": 4,
+        "index": 3,
+        "role": "cast",
         "name": "Laoi Curtin",
         "slug": "laoi_curtin",
         "image": "laoi",
@@ -41,14 +38,8 @@
         "bio": "Laoi Curtin (they/them) is an Irish non-binary performer based in London. They acquired their BFA Musical Theatre from American College Dublin in 2022. Credits in training: Molly in <i>One Touch of Venus</i>, Narrator in <i>Into The Woods</i>, Marmee in <i>Little Women (The Broadway Musical)</i>, Candace in <i>Image of an Unknown Young Woman</i>."
     },
     {
-        "index": 5,
-        "name": "Rachel Blaquière",
-        "slug": "rachel_blaquiere",
-        "image": "rachel",
-        "pronouns": "she/her"
-    },
-    {
-        "index": 6,
+        "index": 4,
+        "role": "cast",
         "name": "Beth Graham",
         "slug": "beth_graham",
         "image": "beth",
@@ -56,12 +47,51 @@
         "bio": "<p>Beth is a proudly queer and neurodivergent musical theatre actor, director and performance maker. Recent acting credits include: Audrey in <i><a href=https://www.pleasance.co.uk/event/all-fraudulent-horse-girls>All the Fraudulent Horse Girls</i></a> (The Glory, Seven Dials Playhouse, National Theatre River Stage), Dingus in <i>In The Basement</i>, and Clara in <i>Couple Fight</i> (The Glory). They are currently preparing to spend the summer horsin' around in the fourth revival of <i><a href=https://crowdfund.edfringe.com/p/horse-girls>All the Fraudulent Horse Girls</a></i>, which will play at the Pleasance Dome, Edinburgh Fringe, from 31st July-26th Aug.</p>"
     },
     {
-        "index": 7,
+        "index": 5,
+        "role": "cast",
         "name": "Ashley Goh",
         "slug": "ashley_goh",
         "image": "ashley",
         "pronouns": "they/them",
         "bio": "<p>Training: Savi Arts, New Earth Theatre, ArtsEd, Mountview</p> <p>Theatre: <i>Babies</i> (The Other Palace), <i>Babies</i> (The Lyric Theatre), <i>FURY & ELYSIUM</i> (The Other Palace Studio), <i>The Phase</i> (The Vaults), <i>Red Riding Hood</i> (Theatre Royal Stratford East)</p><p>Concerts: <i>REPRESENTASIAN</i> (Phoenix Arts Theatre), <i>The Chamber Musical Sessions</i> (Garrick Theatre), <i>PRIDE at the Palace</i> (The Palace Theatre)</p><p>Film: <i>Divine Intervention</i> (dir. Ravenna Tran), <i>Aetherium</i> (dir. Livvy Edwards)</p><p>Audio drama: <i>Trice Forgotten</i> (Rusty Quill)</p>",
         "instagram": "ashleyinshades"
+    },
+    {
+        "index": 6,
+        "role": "band",
+        "name": "Rachel Blaquière",
+        "slug": "rachel_blaquiere",
+        "image": "rachel",
+        "pronouns": "she/her",
+        "bio": "Rachel Blaquière is a 25-year-old musical director, composer, and pianist, as well as a fellow member of the queer community as a lesbian trans woman. She trained at Edinburgh University and Mountview and now freelances as a musician and tutor. Musical direction credits include: <i>Divas: From Stage to Screen</i>, <i>Big Band Does Broadway</i> (BBD Productions); <i>25th Annual Putnam County Spelling Bee</i>, <i>Alice</i>, <i>Mill on the Floss</i> (Italia Conti); <i>God Save The Kink</i> (King's Head Theatre); <i>Pinocchio</i> (Georgian Theatre Royal); <i>Sunshine on Leith</i> (Captivate Theatre). Composing credits include: <i>All the Fraudulent Horse Girls</i>, <i>In the Basement</i>, (Brooklyn Rep UK); <i>Cosmic Odyssey Cannes</i> (Boo Productions); <i>Tap of the Reverie</i> (London Film School, dir. Asia Alselmi); <i>Of Dysphoria and Blood</i> (dir. Hazel Magnoni); <i>The Wind in the Willows</i>, <i>The Wicked Lady</i> (Frankfurt Youth Theatre)."
+    },
+    {
+        "index": 7,
+        "role": "band",
+        "name": "Max Alexander-Taylor",
+        "pronouns": "he/him",
+        "slug": "max_alexander_taylor"
+    },
+    {
+        "index": 8,
+        "role": "stage",
+        "name": "Ro West",
+        "pronouns": "they/them",
+        "slug": "ro_west",
+        "bio": "Ro West (they/them) is a disabled queer soundie turned stage manager turned all round technical busy body. With qualifications in technical sound and stage management as well as far too many questions for technical theatre teams, they are always eager to put their knowledge to practice. Credits Include: Lighting Designer on <i>Fuckboy</i> at Riverside Studios and Riverside Studios, Sound No. 2 Dep on <i>The Comeuppance</i> at The Almeida, ASM Book Cover on <i>Wedding Band</i> at The Lyric Hammersmith, SM on Book on <i>Wendy and Peter Pan</i> at The Mack, CSM on Book on <i>There’s No Place Like Grove</i> at The Tabernacle, DSM on <i>Ragedom</i> at The Courtyard Theatre, Sound No. 1 on <i>Faking Bad</i> at The Turbine Theatre, Stage Manager on <i>Ikaria</i> at Abbey Theatre, Stage Manager on <i>Climate Cabaret</i> at Fusebox, Sound No. 2 on <i>Bring it On</i> at The Mack, DSM on <i>Romeo and Juliet</i> at The Drum, Theatre Royal Plymouth, CSM on Book / Sound No. 1 on <i>Halls</i> at Turbine Theatre, Backstage Dep (CSM Plot) on <i>Eugenius</i> at Turbine Theatre, SM on Book on <i>Scritches #1</i> at The Glory, CSM on Book on <i>Charlie and the Everlasting Gobstopper</i> at The Tabernacle, Sound Designer and Operator on <i>Trojans ‘22</i> at The Playground Theatre and Big Ideas Literature and Life Stages FT Weekend Festival, SM on Book on <i>Legally Blonde</i> at The Mack, ASM on <i>Yeast Nation - The Triumph of Life</i> at The Large, Southwark Playhouse"
+    },
+    {
+        "index": 9,
+        "role": "design",
+        "name": "Claire Leung",
+        "slug": "claire_leung",
+        "pronouns": "she/her"
+    },
+    {
+        "index": 10,
+        "role": "design",
+        "name": "Joe Vaughan",
+        "slug": "joe_vaughan",
+        "pronouns": "he/him"
     }
 ]

@@ -6,19 +6,27 @@ import data from "../assets/data/data.json";
 ---
 
 <Layout title="Belting My Tits Off" header={true}>
-  <Grid title="Performers">
+  <Grid title="Cast">
     {
-      data.map((performer) =>
-        1 >= performer.index ? (
+      data
+        .filter((performer) => performer.role === "cast")
+        .map((performer) => (
           <Performer
-            loading="eager"
+            loading={performer.index <= 1 ? "eager" : "lazy"}
             key={performer.index}
             name={performer.name}
             image={performer.image}
             pronouns={performer.pronouns}
             slug={performer.slug}
           />
-        ) : (
+        ))
+    }
+  </Grid>
+  <Grid title="Band">
+    {
+      data
+        .filter((performer) => performer.role === "band")
+        .map((performer) => (
           <Performer
             loading="lazy"
             key={performer.index}
@@ -27,8 +35,39 @@ import data from "../assets/data/data.json";
             pronouns={performer.pronouns}
             slug={performer.slug}
           />
-        )
-      )
+        ))
+    }
+  </Grid>
+  <Grid title="Stage">
+    {
+      data
+        .filter((performer) => performer.role === "stage")
+        .map((performer) => (
+          <Performer
+            loading="lazy"
+            key={performer.index}
+            name={performer.name}
+            image={performer.image}
+            pronouns={performer.pronouns}
+            slug={performer.slug}
+          />
+        ))
+    }
+  </Grid>
+  <Grid title="Design">
+    {
+      data
+        .filter((performer) => performer.role === "design")
+        .map((performer) => (
+          <Performer
+            loading="lazy"
+            key={performer.index}
+            name={performer.name}
+            image={performer.image}
+            pronouns={performer.pronouns}
+            slug={performer.slug}
+          />
+        ))
     }
   </Grid>
 </Layout>

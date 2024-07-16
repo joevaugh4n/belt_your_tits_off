@@ -1,10 +1,9 @@
 ---
-
 interface Props {
   name: string;
-  image: string;
+  image: string | undefined;
   pronouns?: string;
-  slug?: string;
+  slug: string | undefined;
   key: number;
   loading: "eager" | "lazy";
 }
@@ -13,32 +12,40 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
 ---
 
 <article
-  class="flex-1 bg-lightpink border rounded-md font-display flex flex-col items-center md:px-8 px-12 py-4 shadow"
+  class="bg-lightpink grid grid-rows-[3fr_auto] h-fit shadow rounded-sm font-display"
 >
-  <div class="flex flex-col items-center justify-center">
-    <img
-      src={`${image}.webp`}
-      title={name}
-      alt={`${name}`}
-      loading={loading}
-      class="md:w-60 w-96 object-cover mb-2 flex rounded-sm shadow rotate"
-    />
-  </div>
-  <section class="h-full mb-2">
+  <!-- Image -->
+  {
+    image ? (
+      <img
+        src={`${image}.webp`}
+        title={name}
+        alt={`${name}`}
+        loading={loading}
+        class="w-full rounded-sm"
+      />
+    ) :
+    ""
+  }
+
+  <!-- Prose -->
+  <section class="p-2 text-black bg-opacity-20 flex items-center flex-col">
     <h2
-      class="text-2xl text-center h-fill font-display self-center uppercase tracking-wider leading-7"
+      class="text-3xl h-fill font-display text-center uppercase tracking-wider leading-8 mb-1"
     >
       {name}
     </h2>
-    <p class="text-center text-gray-600">{pronouns && `(${pronouns})`}</p>
+
+    <p class="font-display mb-2">{pronouns && `(${pronouns})`}</p>
+
+    {
+      slug && (
+        <a href={`/${slug}`}>
+          <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
+            Bio
+          </button>
+        </a>
+      )
+    }
   </section>
-  {
-    slug && (
-      <a href={`/performers/${slug}`} class="flex w-fit">
-        <button class="bg-darkpink text-white rounded shadow md:w-60 w-96 text-lg">
-          Bio
-        </button>
-      </a>
-    )
-  }
 </article>

@@ -30,9 +30,9 @@ const { title } = Astro.props;
   </head>
   <body class="p-4 flex flex-col bg-blue" transition:animate="fade">
     <header class="mb-4">
-      <a href="/"
-        ><Image
-          class="w-24"
+      <a href="/" class="w-fit flex">
+        <Image
+          class="w-24 transition-transform transform hover:scale-105 active:scale-95"
           src={logo}
           alt="Belt Your Tits Off"
           loading="eager"

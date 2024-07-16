@@ -1,7 +1,7 @@
 ---
-import Layout from "../../layouts/PerformerLayout.astro";
+import Layout from "../layouts/PerformerLayout.astro";
 import { Icon } from "astro-icon/components";
-import data from "../../assets/data/data.json";
+import data from "../assets/data/data.json";
 import type { ImageMetadata } from "astro";
 
 // Create static paths from the json data
@@ -10,6 +10,7 @@ export function getStaticPaths() {
     params: {
       performer: performer.slug,
       image: performer.image,
+      role: performer.role,
       id: index,
       name: performer.name,
       bio: performer.bio,
@@ -42,6 +43,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     ? `${performerData.name} (${performerData.pronouns})`
     : "Undefined"}
 >
+  <!-- Socials -->
   <nav class="flex-col gap-2 items-center justify-center absolute right-8">
     {
       performerData?.instagram && (
@@ -51,24 +53,30 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       )
     }
   </nav>
+
+  <!-- Name, role and pronouns -->
   <header class="mb-4">
     <h2 class="font-display text-4xl mb-1 tracking-wide uppercase text-center">
-      {performerData?.name}
+      {performerData?.role}: {performerData?.name}
     </h2>
-    <p class="font-display text-center">({performerData?.pronouns})</p>
+    <div class="flex justify-center gap-8 font-sans text-center">
+      <p class="">({performerData?.pronouns})</p>
+    </div>
   </header>
-  <section class="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
 
+  <!-- Image -->
+  <section class="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
     {
       performerData?.image && (
         <img
           alt={`A headshot of ${performerData?.name}, looking directly at the camera`}
           src={`/${performerData.image}.webp`}
-          class="rounded w-3/4 border-2 border-blue md:justify-self-end justify-self-center shadow"
+          class="rounded border-2 border-blue md:justify-self-end justify-self-center shadow"
         />
       )
     }
 
+    <!-- Prose -->
     <section class="font-sans text-black text-lg leading-7">
       <section
         class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
@@ -79,25 +87,21 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       >
     </section>
   </section>
+
+  <!-- Nav -->
   <nav class="flex justify-between items-center mt-4">
     <button
-      class="shadow p-2 rounded bg-darkpink border-blue border text-white"
+      class="shadow p-2 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
     >
-      <a
-        href={`/performers/${previousPerformer.slug}`}
-        class="flex items-center gap-2"
-      >
+      <a href={`/${previousPerformer.slug}`} class="flex items-center gap-2">
         <Icon name="mdi:arrow-left" class="text-2xl text-white" />
         <span class="font-display">{previousPerformer.name}</span>
       </a>
     </button>
     <button
-      class="shadow p-2 rounded bg-darkpink border-blue border text-white"
+      class="shadow p-2 rounded bg-darkpink border-blue border text-white transition-transform transform hover:scale-105 active:scale-95"
     >
-      <a
-        href={`/performers/${nextPerformer.slug}`}
-        class="flex items-center gap-2"
-      >
+      <a href={`/${nextPerformer.slug}`} class="flex items-center gap-2">
         <span class="font-display">{nextPerformer.name}</span>
         <Icon name="mdi:arrow-right" class="text-2xl text-white" />
       </a>

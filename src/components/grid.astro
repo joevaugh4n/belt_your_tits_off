@@ -6,10 +6,10 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<section class="mx-auto">
+<section class="container h-max mx-auto">
   <h2 class="text-center font-display text-4xl mb-2">{title}</h2>
   <section
-    class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-4 gap-6 mx-auto self-center mb-12"
+    class="grid lg:grid-cols-3 grid-cols-2 md:gap-4 gap-6 mx-auto mb-12 items-start"
   >
     <slot />
   </section>
