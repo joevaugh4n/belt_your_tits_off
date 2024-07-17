@@ -7,7 +7,17 @@
         "tiktok": "el_and_len",
         "image": "el",
         "pronouns": "they/them",
-        "bio": "<p>El is a Belgian actor who settled in London after drama school. They have experience in musical theatre, theatre, film, tv and opera as well as production work and are currently part of the National Youth Theatre.</p><p>Training: Mountview, Fontys, De! Kunsthumaniora, RITCS</p><p>Credits in training: Medium Alison in <i>Fun Home</i> (Mountview), Charity in <i>Sweet Charity</i> (Mountview)</p> <p>Theatre: <i>Ada</i> (NYT), <i>La Fête</i> (The Glory)</p> <p>Concert: <i>Dreaming Of MT</i> (Union Theatre)</p><p>Film: <i>Annette</i></p><p>Other: <i>Hold The Hope</i>, <i>Stranger Things: The Experience</i>, <i>De Ideale Wereld</i>, <i>The Odyssey: Part V</i> (workshop at The National)</p>"
+        "bio": "<p>El is a Belgian actor who settled in London after drama school. They have experience in musical theatre, theatre, film, tv and opera as well as production work and are currently part of the National Youth Theatre.</p><p>Training: Mountview, Fontys, De! Kunsthumaniora, RITCS</p><p>Credits in training: Medium Alison in <i>Fun Home</i> (Mountview), Charity in <i>Sweet Charity</i> (Mountview)</p> <p>Theatre: <i>Ada</i> (NYT), <i>La Fête</i> (The Glory)</p> <p>Concert: <i>Dreaming Of MT</i> (Union Theatre)</p><p>Film: <i>Annette</i></p><p>Other: <i>Hold The Hope</i>, <i>Stranger Things: The Experience</i>, <i>De Ideale Wereld</i>, <i>The Odyssey: Part V</i> (workshop at The National)</p>",
+        "shows": [
+            {
+                "showlink": "link",
+                "showtitle": "Example Show"
+            },
+            {
+                "showlink": "link",
+                "showtitle": "A Second Show"
+            }
+        ]
     },
     {
         "index": 1,
@@ -16,7 +26,7 @@
         "slug": "joy_tan",
         "image": "joy",
         "pronouns": "they/them",
-        "bio": "Joy Tan trained at the Mountview Academy of Theatre Arts and the Royal Conservatoire of Scotland. They are part of <i>Showstopper! The Improvised Musical</i> who tour and perform across the UK. Work in theatre includes: <i>Jungle Rumble</i> at the Fortune; <i>A-Typical Rainbow</i> at the Turbine; <i>The Crucible</i> at the Olivier and at the Gielgud; <i>George Takei’s Allegiance</i> at the Charing Cross and <i>Pacific Overtures</i> at the Menier Chocolate Factory. Workshops include <i>Witches</i> with Lyndsey Turner, Dave Malloy and Lucy Kirkwood."
+        "bio": "<p>Joy Tan trained at the Mountview Academy of Theatre Arts and the Royal Conservatoire of Scotland. They are part of <i>Showstopper! The Improvised Musical</i> who tour and perform across the UK.</p><p> Work in theatre includes: <i>Jungle Rumble</i> at the Fortune; <i>A-Typical Rainbow</i> at the Turbine; <i>The Crucible</i> at the Olivier and at the Gielgud; <i>George Takei’s Allegiance</i> at the Charing Cross and <i>Pacific Overtures</i> at the Menier Chocolate Factory. Workshops include <i>Witches</i> with Lyndsey Turner, Dave Malloy and Lucy Kirkwood.</p>"
     },
     {
         "index": 2,
@@ -25,7 +35,7 @@
         "slug": "freddie_love",
         "image": "freddie",
         "pronouns": "they/them",
-        "bio": "Freddie Love (they/them) is a multifaceted artist whose talents span the realms of acting, writing, musical theatre, opera, and drag. Originally from Oklahoma USA, Freddie clawed their way off the farm and on to the stage. From the West End to queer basement theatre, Freddie has captivated audiences worldwide. Their credits include: <i>Just For One Day</i> (The Old Vic), <i>But I’m A Cheerleader</i> (Turbine Theatre), <i>Classical Drag</i> (Here at Outernet), <i>Fierce Love</i> (Cockpit Theatre), <i>Gatsby</i> (Southwark Playhouse), <i>Sex, Drag & Opera</i> (King’s Head Theatre), and <i>Queer Cowboys</i> (Wilton’s Music Hall). Their solo show <i>Queer Cowboys</i> will be returning to the King’s Head Theatre later this summer.",
+        "bio": "<p>Freddie Love (they/them) is a multifaceted artist whose talents span the realms of acting, writing, musical theatre, opera, and drag. Originally from Oklahoma USA, Freddie clawed their way off the farm and on to the stage. From the West End to queer basement theatre, Freddie has captivated audiences worldwide.</p><p> Their credits include: <i>Just For One Day</i> (The Old Vic), <i>But I’m A Cheerleader</i> (Turbine Theatre), <i>Classical Drag</i> (Here at Outernet), <i>Fierce Love</i> (Cockpit Theatre), <i>Gatsby</i> (Southwark Playhouse), <i>Sex, Drag & Opera</i> (King’s Head Theatre), and <i>Queer Cowboys</i> (Wilton’s Music Hall). Their solo show <i>Queer Cowboys</i> will be returning to the King’s Head Theatre later this summer.</p>",
         "website": "www.freddielove.com",
         "instagram": "mx.freddielove"
     },
@@ -80,7 +90,7 @@
         "name": "Ro West",
         "pronouns": "they/them",
         "slug": "ro_west",
-        "bio": "Ro West (they/them) is a disabled queer soundie turned stage manager turned all round technical busy body. With qualifications in technical sound and stage management as well as far too many questions for technical theatre teams, they are always eager to put their knowledge to practice. Credits Include: Lighting Designer on <i>Fuckboy</i> at Riverside Studios and Riverside Studios, Sound No. 2 Dep on <i>The Comeuppance</i> at The Almeida, ASM Book Cover on <i>Wedding Band</i> at The Lyric Hammersmith, SM on Book on <i>Wendy and Peter Pan</i> at The Mack, CSM on Book on <i>There’s No Place Like Grove</i> at The Tabernacle, DSM on <i>Ragedom</i> at The Courtyard Theatre, Sound No. 1 on <i>Faking Bad</i> at The Turbine Theatre, Stage Manager on <i>Ikaria</i> at Abbey Theatre, Stage Manager on <i>Climate Cabaret</i> at Fusebox, Sound No. 2 on <i>Bring it On</i> at The Mack, DSM on <i>Romeo and Juliet</i> at The Drum, Theatre Royal Plymouth, CSM on Book / Sound No. 1 on <i>Halls</i> at Turbine Theatre, Backstage Dep (CSM Plot) on <i>Eugenius</i> at Turbine Theatre, SM on Book on <i>Scritches #1</i> at The Glory, CSM on Book on <i>Charlie and the Everlasting Gobstopper</i> at The Tabernacle, Sound Designer and Operator on <i>Trojans ‘22</i> at The Playground Theatre and Big Ideas Literature and Life Stages FT Weekend Festival, SM on Book on <i>Legally Blonde</i> at The Mack, ASM on <i>Yeast Nation - The Triumph of Life</i> at The Large, Southwark Playhouse"
+        "bio": "<p>Ro West (they/them) is a disabled queer soundie turned stage manager turned all round technical busy body. With qualifications in technical sound and stage management as well as far too many questions for technical theatre teams, they are always eager to put their knowledge to practice.</p><p>Credits include: Lighting Designer on <i>Fuckboy</i> at Riverside Studios and Riverside Studios, Sound No. 2 Dep on <i>The Comeuppance</i> at The Almeida, ASM Book Cover on <i>Wedding Band</i> at The Lyric Hammersmith, SM on Book on <i>Wendy and Peter Pan</i> at The Mack, CSM on Book on <i>There’s No Place Like Grove</i> at The Tabernacle, DSM on <i>Ragedom</i> at The Courtyard Theatre, Sound No. 1 on <i>Faking Bad</i> at The Turbine Theatre, Stage Manager on <i>Ikaria</i> at Abbey Theatre, Stage Manager on <i>Climate Cabaret</i> at Fusebox, Sound No. 2 on <i>Bring it On</i> at The Mack, DSM on <i>Romeo and Juliet</i> at The Drum, Theatre Royal Plymouth, CSM on Book / Sound No. 1 on <i>Halls</i> at Turbine Theatre, Backstage Dep (CSM Plot) on <i>Eugenius</i> at Turbine Theatre, SM on Book on <i>Scritches #1</i> at The Glory, CSM on Book on <i>Charlie and the Everlasting Gobstopper</i> at The Tabernacle, Sound Designer and Operator on <i>Trojans ‘22</i> at The Playground Theatre and Big Ideas Literature and Life Stages FT Weekend Festival, SM on Book on <i>Legally Blonde</i> at The Mack, ASM on <i>Yeast Nation - The Triumph of Life</i> at The Large, Southwark Playhouse.</p>"
     },
     {
         "index": 9,

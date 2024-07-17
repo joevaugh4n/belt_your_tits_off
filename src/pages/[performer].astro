@@ -9,22 +9,18 @@ export function getStaticPaths() {
   return data.map((performer, index) => ({
     params: {
       performer: performer.slug,
-      image: performer.image,
-      role: performer.role,
+    },
+    props: {
+      performer,
       id: index,
-      name: performer.name,
-      bio: performer.bio,
-      instagram: performer.instagram,
-      tiktok: performer.tiktok,
-      website: performer.website,
     },
   }));
 }
 
-const { performer } = Astro.params;
+const { performer } = Astro.props;
 
 // Code for the navigation
-const performerIndex = data.findIndex((p) => p.slug === performer);
+const performerIndex = data.findIndex((p) => p.slug === performer.slug);
 const performerData = data[performerIndex];
 
 const previousPerformerIndex = (performerIndex - 1 + data.length) % data.length;
@@ -35,7 +31,7 @@ const nextPerformer = data[nextPerformerIndex];
 
 // Import images dynamically
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 ---
 
@@ -88,9 +84,20 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
         set:html={performerData?.bio}
       />
-      <a class="underline" href={`https://${performerData?.website}`}
-        >{performerData?.website && performerData.website}</a
-      >
+      <a class="underline mb-2" href={`https://${performerData?.website}`}>
+        {performerData?.website && performerData.website}
+      </a>
+      {
+        performerData?.shows &&
+          performerData.shows.map((show) => (
+            <div class="flex flex-row items-center gap-2">
+              <Icon name="mdi:ticket" class="text-2xl text-black" />
+              <a class="underline" href={show.showlink}>
+                {show.showtitle}
+              </a>
+            </div>
+          ))
+      }
     </section>
   </section>
 
