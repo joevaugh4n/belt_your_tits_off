@@ -37,7 +37,13 @@
         "pronouns": "they/them",
         "bio": "<p>Freddie Love (they/them) is a multifaceted artist whose talents span the realms of acting, writing, musical theatre, opera, and drag. Originally from Oklahoma USA, Freddie clawed their way off the farm and on to the stage. From the West End to queer basement theatre, Freddie has captivated audiences worldwide.</p><p> Their credits include: <i>Just For One Day</i> (The Old Vic), <i>But I’m A Cheerleader</i> (Turbine Theatre), <i>Classical Drag</i> (Here at Outernet), <i>Fierce Love</i> (Cockpit Theatre), <i>Gatsby</i> (Southwark Playhouse), <i>Sex, Drag & Opera</i> (King’s Head Theatre), and <i>Queer Cowboys</i> (Wilton’s Music Hall). Their solo show <i>Queer Cowboys</i> will be returning to the King’s Head Theatre later this summer.</p>",
         "website": "www.freddielove.com",
-        "instagram": "mx.freddielove"
+        "instagram": "mx.freddielove",
+        "shows": [
+            {
+                "showtitle": "Queer Cowboys",
+                "showlink": "https://kingsheadtheatre.com/whats-on/queer-cowboys?fbclid=PAZXh0bgNhZW0CMTEAAaYdG9B2E6hOWHp6LbwAErySS36n1NK-Y_nRGUcnxP1dlP8uNsMP3BFhFng_aem_lXTtgJxW-1oryS6h7DmVvQ"
+            }
+        ]
     },
     {
         "index": 3,
@@ -46,7 +52,11 @@
         "slug": "laoi_curtin",
         "image": "laoi",
         "pronouns": "they/them",
-        "bio": "Laoi Curtin (they/them) is an Irish non-binary performer based in London. They acquired their BFA Musical Theatre from American College Dublin in 2022. Credits in training: Molly in <i>One Touch of Venus</i>, Narrator in <i>Into The Woods</i>, Marmee in <i>Little Women (The Broadway Musical)</i>, Candace in <i>Image of an Unknown Young Woman</i>."
+        "bio": "<p>Laoi Curtin(they/them) is an Irish non-binary performer based in London. They acquired their BFA Musical Theatre from American College Dublin in 2022.</p><p>Credits in training: Molly in <i>One Touch of Venus</i>, Narrator in <i>Into The Woods</i>, Marmee in <i>Little Women (The Broadway Musical)</i>, Candace in <i>Image of an Unknown Young Woman</i>.<p><p>Upcoming: Laoi will be performing in <i>Canadh</i> (a celebration of Irish trained, London based talent) on July 29th at the Phoenix Arts Club.</p>",
+        "shows": [{
+            "showtitle": "Canadh",
+            "showlink": "https://l.instagram.com/?u=https%3A%2F%2Fphoenixartsclub.com%2Fevents%2Fcanadh%2F%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaakgjSEQ9OZyD5N9Pp7W_zwOWWj7UDl8Mi9-bmmQmW5-9Ox0f_RBOjrS38_aem_FcF8LWOrt3Nct-piTDefjQ&e=AT3uM98mjhWQ6Y7KRZ6Nd7Ou92i73ZF5GuVOoaI7lGENw9-9MeXdJS9Pn47hRN9Rkx0arN1_QRju8EpcZpWhrOn4B9KPf-XvZWERurU"
+        }]
     },
     {
         "index": 4,
@@ -56,7 +66,13 @@
         "image": "beth",
         "instagram": "bethgraham__",
         "pronouns": "she/they",
-        "bio": "<p>Beth is a proudly queer and neurodivergent musical theatre actor, director and performance maker. Recent acting credits include: Audrey in <i><a href=https://www.pleasance.co.uk/event/all-fraudulent-horse-girls>All the Fraudulent Horse Girls</i></a> (The Glory, Seven Dials Playhouse, National Theatre River Stage), Dingus in <i>In The Basement</i>, and Clara in <i>Couple Fight</i> (The Glory). They are currently preparing to spend the summer horsin' around in the fourth revival of <i><a href=https://crowdfund.edfringe.com/p/horse-girls>All the Fraudulent Horse Girls</a></i>, which will play at the Pleasance Dome, Edinburgh Fringe, from 31st July-26th Aug.</p>"
+        "bio": "<p>Beth is a proudly queer and neurodivergent musical theatre actor, director and performance maker.</p><p>Recent acting credits include: Audrey in <i>All the Fraudulent Horse Girls</i>(The Glory, Seven Dials Playhouse, National Theatre River Stage), Dingus in <i>In The Basement</i>, and Clara in <i>Couple Fight</i> (The Glory). They are currently preparing to spend the summer horsin' around in the fourth revival of <i>All the Fraudulent Horse Girls</a></i>, which will play at the Pleasance Dome, Edinburgh Fringe, from 31st July-26th Aug.</p>",
+        "shows": [
+            {
+                "showlink": "https://www.pleasance.co.uk/event/all-fraudulent-horse-girls",
+                "showtitle": "All the Fraudulent Horse Girls"
+            }
+        ]
     },
     {
         "index": 5,
@@ -75,7 +91,13 @@
         "slug": "rachel_blaquiere",
         "image": "rachel",
         "pronouns": "she/her",
-        "bio": "Rachel Blaquière is a 25-year-old musical director, composer, and pianist, as well as a fellow member of the queer community as a lesbian trans woman. She trained at Edinburgh University and Mountview and now freelances as a musician and tutor. Musical direction credits include: <i>Divas: From Stage to Screen</i>, <i>Big Band Does Broadway</i> (BBD Productions); <i>25th Annual Putnam County Spelling Bee</i>, <i>Alice</i>, <i>Mill on the Floss</i> (Italia Conti); <i>God Save The Kink</i> (King's Head Theatre); <i>Pinocchio</i> (Georgian Theatre Royal); <i>Sunshine on Leith</i> (Captivate Theatre). Composing credits include: <i>All the Fraudulent Horse Girls</i>, <i>In the Basement</i>, (Brooklyn Rep UK); <i>Cosmic Odyssey Cannes</i> (Boo Productions); <i>Tap of the Reverie</i> (London Film School, dir. Asia Alselmi); <i>Of Dysphoria and Blood</i> (dir. Hazel Magnoni); <i>The Wind in the Willows</i>, <i>The Wicked Lady</i> (Frankfurt Youth Theatre)."
+        "bio": "<p>Rachel Blaquière is a 25-year-old musical director, composer, and pianist, as well as a fellow member of the queer community as a lesbian trans woman. She trained at Edinburgh University and Mountview and now freelances as a musician and tutor.</p><p>Musical direction credits include: <i>Divas: From Stage to Screen</i>, <i>Big Band Does Broadway</i> (BBD Productions); <i>25th Annual Putnam County Spelling Bee</i>, <i>Alice</i>, <i>Mill on the Floss</i> (Italia Conti); <i>God Save The Kink</i> (King's Head Theatre); <i>Pinocchio</i> (Georgian Theatre Royal); <i>Sunshine on Leith</i> (Captivate Theatre). Composing credits include: <i>All the Fraudulent Horse Girls</i>, <i>In the Basement</i>, (Brooklyn Rep UK); <i>Cosmic Odyssey Cannes</i> (Boo Productions); <i>Tap of the Reverie</i> (London Film School, dir. Asia Alselmi); <i>Of Dysphoria and Blood</i> (dir. Hazel Magnoni); <i>The Wind in the Willows</i>, <i>The Wicked Lady</i> (Frankfurt Youth Theatre).</p>",
+        "shows": [
+            {
+                "showlink": "https://www.pleasance.co.uk/event/all-fraudulent-horse-girls",
+                "showtitle": "All the Fraudulent Horse Girls"
+            }
+        ]
     },
     {
         "index": 7,

@@ -43,7 +43,6 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <!-- Role -->
 
   <!-- Name, role and pronouns -->
-
   <p class="capitalize mb-2">{performerData?.role}</p>
 
   <header class="mb-4 flex justify-between items-start">
@@ -66,8 +65,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </section>
   </header>
 
-  <!-- Image -->
-  <section class="grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8">
+  <section
+    class={performerData.image
+      ? "grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8"
+      : "mb-8"}
+  >
+
+    <!-- Image -->
     {
       performerData?.image && (
         <img
@@ -78,21 +82,42 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       )
     }
 
-    <!-- Prose -->
-    <section class="font-sans text-black text-lg leading-8 tracking-wider">
-      <section
-        class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
-        set:html={performerData?.bio}
-      />
-      <a class="underline mb-2" href={`https://${performerData?.website}`}>
-        {performerData?.website && performerData.website}
-      </a>
+    <!-- Bio -->
+    <section class="font-sans text-black text-lg leading-7 tracking-wider">
+      {
+        performerData?.bio && (
+          <section
+            class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
+            set:html={performerData?.bio}
+          />
+        )
+      }
+
+      <!-- Website -->
+      {
+        performerData?.website && (
+          <div class="flex flex-row items-center gap-2">
+            <Icon name="mdi:link" class="text-2xl text-black" />
+            <a
+              class="hover:underline text-black font-semibold mb-2"
+              href={`https://${performerData?.website}`}
+            >
+              {performerData.website}
+            </a>
+          </div>
+        )
+      }
+
+      <!-- Shows -->
       {
         performerData?.shows &&
           performerData.shows.map((show) => (
             <div class="flex flex-row items-center gap-2">
               <Icon name="mdi:ticket" class="text-2xl text-black" />
-              <a class="underline" href={show.showlink}>
+              <a
+                class="hover:underline text-black font-semibold italic"
+                href={show.showlink}
+              >
                 {show.showtitle}
               </a>
             </div>

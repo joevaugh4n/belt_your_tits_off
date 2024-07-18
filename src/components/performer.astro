@@ -15,17 +15,19 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
   class="bg-lightpink h-full shadow rounded-sm font-display flex flex-col justify-between"
 >
   <!-- Image -->
-  {image ? (
-    <img
-      src={`${image}.webp`}
-      title={name}
-      alt={`${name}`}
-      loading={loading}
-      class="w-full rounded-sm"
-    />
-  ) : (
-    ""
-  )}
+  {
+    image ? (
+      <img
+        src={`${image}.webp`}
+        title={name}
+        alt={`${name}`}
+        loading={loading}
+        class="w-full rounded-sm"
+      />
+    ) : (
+      <div class="min-h-[50vh] h-full bg-gray-300"/>
+    )
+  }
 
   <!-- Prose -->
   <section class="p-2 text-black bg-opacity-20 flex flex-col flex-grow">
@@ -40,14 +42,16 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
     </section>
 
     <!-- CTA -->
-    {slug && (
-      <div class="flex justify-center mt-4">
-        <a href={`/${slug}`}>
-          <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
-            Bio
-          </button>
-        </a>
-      </div>
-    )}
+    {
+      slug && (
+        <div class="flex justify-center mt-4">
+          <a href={`/${slug}`}>
+            <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
+              Bio
+            </button>
+          </a>
+        </div>
+      )
+    }
   </section>
 </article>
