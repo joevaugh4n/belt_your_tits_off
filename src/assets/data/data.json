@@ -7,17 +7,7 @@
         "tiktok": "el_and_len",
         "image": "el",
         "pronouns": "they/them",
-        "bio": "<p>El is a Belgian actor who settled in London after drama school. They have experience in musical theatre, theatre, film, tv and opera as well as production work and are currently part of the National Youth Theatre.</p><p>Training: Mountview, Fontys, De! Kunsthumaniora, RITCS</p><p>Credits in training: Medium Alison in <i>Fun Home</i> (Mountview), Charity in <i>Sweet Charity</i> (Mountview)</p> <p>Theatre: <i>Ada</i> (NYT), <i>La Fête</i> (The Glory)</p> <p>Concert: <i>Dreaming Of MT</i> (Union Theatre)</p><p>Film: <i>Annette</i></p><p>Other: <i>Hold The Hope</i>, <i>Stranger Things: The Experience</i>, <i>De Ideale Wereld</i>, <i>The Odyssey: Part V</i> (workshop at The National)</p>",
-        "shows": [
-            {
-                "showlink": "link",
-                "showtitle": "Example Show"
-            },
-            {
-                "showlink": "link",
-                "showtitle": "A Second Show"
-            }
-        ]
+        "bio": "<p>El is a Belgian actor who settled in London after drama school. They have experience in musical theatre, theatre, film, tv and opera as well as production work and are currently part of the National Youth Theatre.</p><p>Training: Mountview, Fontys, De! Kunsthumaniora, RITCS</p><p>Credits in training: Medium Alison in <i>Fun Home</i> (Mountview), Charity in <i>Sweet Charity</i> (Mountview)</p> <p>Theatre: <i>Ada</i> (NYT), <i>La Fête</i> (The Glory)</p> <p>Concert: <i>Dreaming Of MT</i> (Union Theatre)</p><p>Film: <i>Annette</i></p><p>Other: <i>Hold The Hope</i>, <i>Stranger Things: The Experience</i>, <i>De Ideale Wereld</i>, <i>The Odyssey: Part V</i> (workshop at The National)</p>"
     },
     {
         "index": 1,
