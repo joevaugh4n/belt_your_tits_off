@@ -12,46 +12,43 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
 ---
 
 <article
-  class="bg-lightpink h-full shadow rounded-sm font-display flex flex-col justify-between"
+  class="bg-lightpink shadow rounded-sm font-display grid grid-rows-[auto_1fr_auto] min-h-[50vh] h-full"
 >
   <!-- Image -->
   {
-    image ? (
+    image && (
       <img
         src={`${image}.webp`}
         title={name}
         alt={`${name}`}
         loading={loading}
-        class="w-full rounded-sm"
+        class="rounded-sm w-full h-auto object-cover"
+        style="grid-row: 1 / 2"
       />
-    ) : (
-      <div class="min-h-[50vh] h-full bg-gray-300"/>
     )
   }
 
   <!-- Prose -->
-  <section class="p-2 text-black bg-opacity-20 flex flex-col flex-grow">
-    <!-- Name & pronouns -->
-    <section class="flex-grow">
-      <h2
-        class="text-2xl font-display text-center uppercase tracking-wider leading-8 mb-1"
-      >
+  <section class="p-2 text-black text-center flex items-center justify-center" style="grid-row: 2 / 3">
+    <div>
+      <!-- Name & pronouns -->
+      <h2 class="text-2xl font-display uppercase tracking-wider leading-8 mb-1">
         {name}
       </h2>
-      <p class="font-display mb-2 text-center">{pronouns && `(${pronouns})`}</p>
-    </section>
-
-    <!-- CTA -->
-    {
-      slug && (
-        <div class="flex justify-center mt-4">
-          <a href={`/${slug}`}>
-            <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
-              Bio
-            </button>
-          </a>
-        </div>
-      )
-    }
+      <p class="font-display mb-2">{pronouns && `(${pronouns})`}</p>
+    </div>
   </section>
+
+  <!-- CTA -->
+  {
+    slug && (
+      <div class="flex justify-center mb-2" style="grid-row: 3 / 4">
+        <a href={`/${slug}`}>
+          <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
+            Bio
+          </button>
+        </a>
+      </div>
+    )
+  }
 </article>

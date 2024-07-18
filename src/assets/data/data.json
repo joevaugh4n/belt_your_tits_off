@@ -31,7 +31,8 @@
         "shows": [
             {
                 "showtitle": "Queer Cowboys",
-                "showlink": "https://kingsheadtheatre.com/whats-on/queer-cowboys?fbclid=PAZXh0bgNhZW0CMTEAAaYdG9B2E6hOWHp6LbwAErySS36n1NK-Y_nRGUcnxP1dlP8uNsMP3BFhFng_aem_lXTtgJxW-1oryS6h7DmVvQ"
+                "showlink": "https://kingsheadtheatre.com/whats-on/queer-cowboys?fbclid=PAZXh0bgNhZW0CMTEAAaYdG9B2E6hOWHp6LbwAErySS36n1NK-Y_nRGUcnxP1dlP8uNsMP3BFhFng_aem_lXTtgJxW-1oryS6h7DmVvQ",
+                "showvenue": "Kings Head Theatre"
             }
         ]
     },
@@ -45,7 +46,8 @@
         "bio": "<p>Laoi Curtin(they/them) is an Irish non-binary performer based in London. They acquired their BFA Musical Theatre from American College Dublin in 2022.</p><p>Credits in training: Molly in <i>One Touch of Venus</i>, Narrator in <i>Into The Woods</i>, Marmee in <i>Little Women (The Broadway Musical)</i>, Candace in <i>Image of an Unknown Young Woman</i>.<p><p>Upcoming: Laoi will be performing in <i>Canadh</i> (a celebration of Irish trained, London based talent) on July 29th at the Phoenix Arts Club.</p>",
         "shows": [{
             "showtitle": "Canadh",
-            "showlink": "https://l.instagram.com/?u=https%3A%2F%2Fphoenixartsclub.com%2Fevents%2Fcanadh%2F%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaakgjSEQ9OZyD5N9Pp7W_zwOWWj7UDl8Mi9-bmmQmW5-9Ox0f_RBOjrS38_aem_FcF8LWOrt3Nct-piTDefjQ&e=AT3uM98mjhWQ6Y7KRZ6Nd7Ou92i73ZF5GuVOoaI7lGENw9-9MeXdJS9Pn47hRN9Rkx0arN1_QRju8EpcZpWhrOn4B9KPf-XvZWERurU"
+            "showlink": "https://phoenixartsclub.com/events/canadh/",
+            "showvenue": "Phoenix Arts Club"
         }]
     },
     {
@@ -60,7 +62,8 @@
         "shows": [
             {
                 "showlink": "https://www.pleasance.co.uk/event/all-fraudulent-horse-girls",
-                "showtitle": "All the Fraudulent Horse Girls"
+                "showtitle": "All the Fraudulent Horse Girls",
+                "showvenue": "Pleasance"
             }
         ]
     },
@@ -85,7 +88,8 @@
         "shows": [
             {
                 "showlink": "https://www.pleasance.co.uk/event/all-fraudulent-horse-girls",
-                "showtitle": "All the Fraudulent Horse Girls"
+                "showtitle": "All the Fraudulent Horse Girls",
+                "showvenue": "Pleasance"
             }
         ]
     },
@@ -116,6 +120,8 @@
         "role": "design",
         "name": "Joe Vaughan",
         "slug": "joe_vaughan",
-        "pronouns": "he/him"
+        "pronouns": "he/him",
+        "bio": "Joe is a writer, improviser, and web designer. Previously he worked at The Museum of English Rural Life and did funny tweets. He can make websites for you just like this one.",
+        "website": "joevaughan.net"
     }
 ]
