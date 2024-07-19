@@ -6,13 +6,14 @@ interface Props {
   slug: string | undefined;
   key: number;
   loading: "eager" | "lazy";
+  bio: string | undefined;
 }
 
-const { name, image, pronouns, slug, key, loading } = Astro.props;
+const { name, image, pronouns, slug, bio, key, loading } = Astro.props;
 ---
 
 <article
-  class="bg-lightpink shadow rounded-sm font-display grid grid-rows-[auto_1fr_auto] min-h-[50vh] h-full"
+  class=`bg-lightpink shadow rounded-sm font-display grid ${bio ?'grid-rows-[auto_1fr_auto]' : 'grid-rows-[auto_1fr]'} min-h-[50vh] h-full`
 >
   <!-- Image -->
   {
@@ -41,7 +42,7 @@ const { name, image, pronouns, slug, key, loading } = Astro.props;
 
   <!-- CTA -->
   {
-    slug && (
+    bio && (
       <div class="flex justify-center mb-2" style="grid-row: 3 / 4">
         <a href={`/${slug}`}>
           <button class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95">
