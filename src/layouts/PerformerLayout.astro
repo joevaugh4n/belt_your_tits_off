@@ -29,7 +29,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="p-4 flex flex-col bg-blue" transition:animate="fade">
-    <header class="mb-4">
+    <header class="flex mb-4 justify-between font-display">
       <a href="/" class="w-fit flex">
         <Image
           class="w-24 transition-transform transform hover:scale-105 active:scale-95"
@@ -38,6 +38,13 @@ const { title } = Astro.props;
           loading="eager"
         /></a
       >
+      <a href="https://www.gofundme.com/f/cn4vt-top-surgery">
+        <button
+          class="shadow px-6 py-2 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95"
+        >
+          Donate to fundraiser
+        </button>
+      </a>
     </header>
     <div class="bg-lightpink px-8 py-4 mb-4 rounded shadow">
       <main>

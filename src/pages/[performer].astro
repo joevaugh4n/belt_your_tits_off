@@ -66,8 +66,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   <!-- Grid -->
   <section
     class={performerData.image
-      ? "grid md:grid-cols-2 gap-x-8 gap-y-4 mb-8"
-      : "mb-8"}
+      ? "grid md:grid-cols-2 gap-x-8 gap-y-4 mb-6"
+      : "mb-6"}
   >
     <!-- Image -->
     {
@@ -85,7 +85,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       {
         performerData?.bio && (
           <section
-            class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-2 text-pretty"
+            class="prose max-w-[60ch] md:justify-self-start justify-self-center mb-4 text-pretty"
             set:html={performerData?.bio}
           />
         )
@@ -124,7 +124,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   </section>
 
   <!-- Nav -->
-  <nav class="flex justify-between items-center mt-4 gap-8">
+  <nav class="flex justify-between items-center gap-8">
     <button
       class="shadow px-2 py-1 rounded bg-darkpink text-white transition-transform transform hover:scale-105 active:scale-95"
     >

@@ -1,11 +1,22 @@
+---
+const currentDate = new Date().toDateString();
+---
+
 <header class="flex flex-col mt-2 mb-6">
+  {
+    currentDate == "Sun Jul 21 2024" && (
+      <marquee class="font-display mb-2">🎈 Today's the day!!! 🎈</marquee>
+    )
+  }
   <section class="flex flex-col items-center">
     <h1
       class="text-6xl text-black font-display text-balance text-center mb-4 uppercase max-w-[10ch]"
     >
       Belting My Tits Off
     </h1>
-    <p class=" text-black italic text-balance font-display text-center text-2xl md:w-2/3 mb-4">
+    <p
+      class="text-black italic text-balance font-display text-center text-2xl md:w-2/3 mb-4"
+    >
       A fabulous evening celebrating trans and non-binary musical theatre talent
     </p>
   </section>
